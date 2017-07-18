@@ -1,5 +1,4 @@
-(ns clock
-  (:require [clojure.string :refer [split]]))
+(ns clock)
 
 (defn clock [hours mins]
   (let [mm (mod mins 60)
@@ -13,5 +12,4 @@
 (defn add-time [clock-v add]
   (clock (first clock-v) (+ (second clock-v) add)))
 
-;(clock->string (add-time (clock 6 41) 0))
 
