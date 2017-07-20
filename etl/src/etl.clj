@@ -7,4 +7,3 @@
               word (get old-map score)]
           [(lower-case word) score])))
 
-
